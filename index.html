@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8">
+	<title>App Café</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/jquery.mobile-1.3.0.min.css" />
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.mobile-1.3.0.min.js"></script>
+	<link rel="stylesheet" href="css/colors.css"/>
+	<link rel="stylesheet" href="css/colors.min.css"/>
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script> 
+</head>
+
+
+<body>
+	<!--pagina de incio-->
+	<div data-role="page" id="inicio">
+
+		<div data-role="header">
+			<a href="#inicio" data-icon="home">Inicio</a>
+			<h1><img src="images/logo-cafe.png" style="height: 90px; width: 50%"></h1>
+			<a href="#productos" data-icon="grid">Menú</a>
+
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#acerca" data-icon="star" data-theme="e">Acerca</a></li>
+					<li><a href="#productos" data-icon="check" data-theme="e">Menú</a></li>
+					<li><a href="#sucursales" data-icon="search" data-theme="e">Sucursal</a></li>
+					<li><a href="#contactos" data-icon="info" data-theme="e">Contactenos</a></li>
+				</ul>
+			</nav>
+
+
+		</div>
+
+		<div data-role="content">
+			<img src="images/inicio-cafe.png" style="height: 300px; width: 100%">
+
+			<ul data-role="listview" data-inset="true" data-split-icon="gear" data-split-theme="a">
+				</li>
+
+				<li data-role="list-divider">Los preferidos de la semana</li>
+				<li>
+					<a href="#">
+						<img src="images/mocca.png">
+						<h2>Café Mocca</h2>
+						<p>Descripción de la promoción</p>
+					</a>
+					<a href="#promo" data-rel="popup" data-position-to="window" data-transition="pop">Mas
+						información</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/espresso.png">
+						<h2>Café Espresso</h2>
+						<p>Descripción de la promoción</p>
+					</a>
+					<a href="#promo" data-rel="popup" data-position-to="window" data-transition="pop">Mas
+						información</a>
+				</li>
+
+				<li>
+					<a href="#">
+						<img src="images/macchiato.png">
+						<h2>Café Macchiato</h2>
+						<p>Descripción de la promoción</p>
+					</a>
+					<a href="#promo" data-rel="popup" data-position-to="window" data-transition="pop">Mas
+						información</a>
+				</li>
+			</ul>
+
+			<div data-role="popup" id="promo" data-theme="d" class="ui-content" data-overlay-theme="b">
+				<h3>Promociones</h3>
+				<p>Los mejores precios ¡Aprovecha!</p>
+				<a href="index.html" data-role="button" data-rel="back" data-theme="b" data-icon="check"
+					data-mini="true" data-inline="true">Comprar a solo $ 10.99</a>
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<h4>Cafetería "CoffeeLovers" 2024 Todos los derechos reservados</h4>
+		</div>
+
+	</div>
+	<!--fin de incio-->
+
+	<!--pagina de Acerca-->
+	<div data-role="page" id="acerca">
+
+		<div data-role="header">
+			<a href="#inicio" data-icon="home">Inicio</a>
+			<h1><img src="images/logo_cafe.png"></h1>
+			<a href="#productos" data-icon="grid">Productos</a>
+
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#acerca" data-icon="star" data-theme="e">Acerca</a></li>
+					<li><a href="#productos" data-icon="check" data-theme="e">Productos</a></li>
+					<li><a href="#sucursales" data-icon="search" data-theme="e">Sucursal</a></li>
+					<li><a href="#contactos" data-icon="info" data-theme="e">Contactenos</a></li>
+				</ul>
+			</nav>
+
+
+		</div>
+
+		<div data-role="content">
+			<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-collpased-icon="arrow-r"
+				data-expandend-icon="arrow-d">
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+					<h3>Misión Empresarial</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, laudantium. Blanditiis nulla
+						itaque ea?</p>
+				</div>
+
+
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+					<h3>Visión Empresarial</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, laudantium. Blanditiis nulla
+						itaque ea?</p>
+				</div>
+
+
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+					<h3>Historia de la Empresa</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, laudantium. Blanditiis nulla
+						itaque ea?</p>
+				</div>
+
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+					<h3>Recursos Multimedia</h3>
+					<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, laudantium. Blanditiis nulla
+						itaque ea?</p>
+
+						<video controls width="100%" poster="video/chef.jpg">
+							<source src="video/video.mp4" type="video/mp4">
+							<source src="video/video.ogv" type="video/ogv">
+							<source src="video/video.webm" type="video/webm">
+						</video>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<h4>Pizza Inc. 2024 Todos los derechos reservados</h4>
+		</div>
+
+	</div>
+	<!--fin de acerca-->
+
+
+	
+
+		
+		<!--pagina de productos-->
+		<div data-role="page" id="productos">
+
+			<div data-role="header">
+				<a href="#inicio" data-icon="home">Inicio</a>
+				<h1><img src="images/logo.png"></h1>
+				<a href="#productos" data-icon="grid">Productos</a>
+	
+				<nav data-role="navbar">
+					<ul>
+						<li><a href="#acerca" data-icon="star" data-theme="e">Acerca</a></li>
+						<li><a href="#productos" data-icon="check" data-theme="e">Productos</a></li>
+						<li><a href="#sucursales" data-icon="search" data-theme="e">Sucursal</a></li>
+						<li><a href="#contactos" data-icon="info" data-theme="e">Contactenos</a></li>
+					</ul>
+				</nav>
+			</div>
+	
+			<div data-role="content">
+				<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d" 
+				data-count-theme="b" data-filter="true" data-filter-placeholder="Buscar Producto">
+					<li data-role="list-divider">Nuestros Productos</li>
+					<li data-icon="plus">
+						<a href="#">
+							<img src="images/producto.png">
+							Pizza Peperoni
+							<br><br>
+							<p>Se trata de una pizza con base de salsa de tomate, mozzarella y pepperoni.</p>
+							<p>Precio: $10.99</p>
+						</a>
+					</li>
+			
+					<li data-icon="plus">
+						<a href="#">
+							<img src="images/producto.png">
+							Pizza Pollo Chipotle
+							<br><br>
+							<p>Nuestra pizza Pollo Chipotle es la opción perfecta para los amantes del chile.</p>
+							<p>Precio: $12.99</p>
+						</a>
+					
+					</li>
+			
+					<li data-icon="plus">
+						<a href="#">
+							<img src="images/producto.png">
+							Pizza Meat Lovers
+							<br><br>
+							<p>Un trío de pepperoni, salchicha y carne de res en una masa crujiente.</p>
+							<p>Precio: $14.99</p>
+						</a>
+						
+					</li>
+				</ul>
+				
+			</div>
+			
+			
+	
+			<div data-role="footer">
+				<h4>Pizza Inc. 2024 Todos los derechos reservados</h4>
+			</div>
+	
+		</div>
+		<!--fin de productos-->
+	
+	
+			<!--pagina de sucursales-->
+			<div data-role="page" id="sucursales">
+	
+				<div data-role="header">
+					<a href="#inicio" data-icon="home">Inicio</a>
+					<h1><img src="images/logo.png"></h1>
+					<a href="#productos" data-icon="grid">Productos</a>
+		
+					<nav data-role="navbar">
+						<ul>
+							<li><a href="#acerca" data-icon="star" data-theme="e">Acerca</a></li>
+							<li><a href="#productos" data-icon="check" data-theme="e">Productos</a></li>
+							<li><a href="#sucursales" data-icon="search" data-theme="e">Sucursal</a></li>
+							<li><a href="#contactos" data-icon="info" data-theme="e">Contactenos</a></li>
+						</ul>
+					</nav>
+		
+		
+				</div>
+		
+				<div data-role="content">
+					<ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="d" 
+				data-count-theme="b" data-filter="true" data-filter-placeholder="Buscar Sucursal">
+					<li data-role="list-divider">Nuestras Sucursales</li>
+					<li data-icon="plus">
+						<a href="#">
+							<img src="images/sucursal.jpg">
+							Sucursal 1
+							<br><br>
+							<p>Se trata de una pizza con base de salsa de tomate, mozzarella y pepperoni.</p>
+						
+						</a>
+					</li>
+			
+					<li data-icon="plus">
+						<a href="#">
+							<img src="images/sucursal.jpg">
+							Sucursal 2
+							<br><br>
+							<p>Nuestra pizza Pollo Chipotle es la opción perfecta para los amantes del chile.</p>
+							
+						</a>
+					
+					</li>
+			
+					<li data-icon="plus">
+						<a href="#">
+							<img src="images/sucursal.jpg">
+							Sucursal 3
+							<br><br>
+							<p>Un trío de pepperoni, salchicha y carne de res en una masa crujiente.</p>
+							
+						</a>
+						
+					</li>
+				</ul>
+				
+			</div>
+					
+				<div data-role="footer">
+					<h4>Pizza Inc. 2024 Todos los derechos reservados</h4>
+				</div>
+		
+			</div>
+		<!--fin de sucursales-->
+	
+	<!--pagina de contactos-->
+	<div data-role="page" id="contactos">
+
+		<div data-role="header">
+			<a href="#inicio" data-icon="home">Inicio</a>
+			<h1><img src="images/logo.png"></h1>
+			<a href="#productos" data-icon="grid">Productos</a>
+
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#acerca" data-icon="star" data-theme="e">Acerca</a></li>
+					<li><a href="#productos" data-icon="check" data-theme="e">Productos</a></li>
+					<li><a href="#sucursales" data-icon="search" data-theme="e">Sucursal</a></li>
+					<li><a href="#contactos" data-icon="info" data-theme="e">Contactenos</a></li>
+				</ul>
+			</nav>
+		</div>
+
+
+		<div data-role="content">
+			<div data-role="collapsible-set" data-theme="c" data-content-theme="d"  
+			data-collpased-icon="arrow-r"
+				data-expandend-icon="arrow-d">
+				<div data-role="collapsible" data-theme="b" data-content-theme="b">
+						<h3>Formulario Contacto</h3>
+						
+						<form id="form1" action="index.html" method="post" 
+						onsubmit="return enviarFormulario()">
+							<input type="text" placeholder="Escribe tu nombre" required>
+							<input type="email" placeholder="Escribe tu email"required>
+							<select>
+								<option>Comentario</option>
+								<option>Sugerencia</option>
+								<option>Pregunta</option>
+							</select>
+							<textarea placeholder="Descripción"required></textarea>
+							<input type="submit" value="Enviar">
+						</form>
+					</div>
+					<script>
+						function enviarFormulario() {
+							
+							window.location.href = "index.html";
+							return false;
+						}
+					</script>
+
+					<div data-role="collapsible" data-theme="b" data-content-theme="b">
+						<h3>Información de Contacto</h3>
+						<p>Email: pizerrialaitaliana@gmail.com</p>
+						<p>Telefono: (503)7859-4414</p>
+						<p>Dirección: Santiago de María, Usulutan</p>
+						<p>Redes Sociales</p>
+						<a href="#"><img src="images/facebook-logo.png" alt=""></a>
+						<a href="#"><img src="images/google-plus-logo.png" alt=""></a>
+						<a href="#"><img src="images/twitter-logo.png" alt=""></a>
+						<a href="#"><img src="images/youtube-logo.png" alt=""></a>
+					</div>
+
+					<div data-role="collapsible" data-theme="b" data-content-theme="b">
+						<h3>Mapa de Ubicación</h3>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.863205680816!2d-88.46292260000001!3d13.
+						482525700000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b3555e527a419%3A0x351058aa7a4c50f6!2sColonia
+						%209%20de%20noviembre!5e0!3m2!1ses-419!2ssv!4v1717083344481!5m2!1ses-419!2ssv"
+						 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+			</div>
+
+
+		<div data-role="footer">
+			<h4>Cafetería "CoffeeLovers" 2024 Todos los derechos reservados</h4>
+		</div>
+
+	</div>
+	<!--fin de acerca-->
+
+
+
+</body>
+
+</html>
